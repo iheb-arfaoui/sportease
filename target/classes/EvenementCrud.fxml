@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="485.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EvenementCrud">
+   <children>
+      <Pane layoutX="-5.0" prefHeight="485.0" prefWidth="200.0" style="-fx-background-color: red;">
+         <children>
+             <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="43.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@images/logosport.png" />
+                 </image>
+                 <effect>
+                     <ColorAdjust brightness="-0.12" contrast="1.0" hue="0.02" saturation="0.24" />
+                 </effect></ImageView>
+            <ImageView fitHeight="95.0" fitWidth="200.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+             <Text fill="#f5f2f2" layoutX="80.0" layoutY="176.0" strokeType="INSIDE" strokeWidth="0.0" text="Acceuil" wrappingWidth="75.13671875">
+                 <stroke>
+                     <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                         <stops>
+                             <Stop>
+                                 <color>
+                                     <Color />
+                                 </color>
+                             </Stop>
+                             <Stop offset="1.0">
+                                 <color>
+                                     <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                             </Stop>
+                         </stops>
+                     </RadialGradient>
+                 </stroke>
+                 <font>
+                     <Font name="Arial Black" size="13.0" />
+                 </font></Text>
+             <Text fill="#ebebeb" layoutX="80.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu" wrappingWidth="38.28271484375">
+                 <font>
+                     <Font name="Arial Black" size="13.0" />
+                 </font></Text>
+
+             <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="43.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@images/acceuil icon.png" />
+                 </image>
+             </ImageView>
+
+             <Label alignment="TOP_LEFT" layoutX="9.0" layoutY="109.0" prefHeight="17.0" prefWidth="182.0" text="Votre satisfaction, notre destination" textAlignment="RIGHT" textFill="WHITE">
+                 <font>
+                     <Font name="Calibri Bold" size="12.0" />
+                 </font>
+             </Label>
+             <Text fill="#fcf7f7" layoutX="80.0" layoutY="250.0" onMouseClicked="#openCategorie" strokeType="OUTSIDE" strokeWidth="0.0" text="Categories">
+                 <font>
+                     <Font name="Arial Black" size="13.0" />
+                 </font></Text>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="195.0" layoutY="142.0" prefHeight="284.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="nomCo" prefWidth="111.0" style="-fx-background-color: #f88763;" text="Nom de l'événement" />
+          <TableColumn fx:id="addressCo" prefWidth="119.0" style="-fx-background-color: #f88763;" text="Abrevation" />
+            <TableColumn fx:id="dateCo" prefWidth="120.0" style="-fx-background-color: #f88763;" text="Date dee l'événement" />
+            <TableColumn fx:id="statusCo" prefWidth="87.0" style="-fx-background-color: #f88763;" text="Statut" />
+            <TableColumn fx:id="eventAdressCo" prefWidth="106.0" style="-fx-background-color: #f88763;" text="Adresse" />
+            <TableColumn fx:id="categorieCo" prefWidth="106.0" style="-fx-background-color: #f88763;" text="Categorie" />
+        </columns>
+      </TableView>
+      <Button layoutX="642.0" layoutY="90.0" mnemonicParsing="false" onAction="#addEvenement" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #f88763;" text="Add" />
+      <Text layoutX="209.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evenement" wrappingWidth="159.13671875">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="modifierButton" layoutX="209.0" layoutY="441.0" mnemonicParsing="false" onAction="#modifierEvenement" prefHeight="25.0" prefWidth="62.0" style="-fx-background-color: #f88763;" text="Modifier" />
+      <Button fx:id="supprimerButton" layoutX="300.0" layoutY="441.0" mnemonicParsing="false" onAction="#supprimerEvenement" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #f88763;" text="Supprimer" />
+          </children>
+</AnchorPane>
