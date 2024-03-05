@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="494.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardC">
+   <children>
+      <ImageView fitHeight="290.0" fitWidth="494.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.3;">
+         <image>
+            <Image url="@images/backgr.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="236.0" layoutY="29.0" prefHeight="200.0" prefWidth="185.0">
+         <children>
+            <Label fx:id="label_name" text="name">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_mail" text="email">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_phone" text="phone">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_acad" text="academy_name">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Button layoutX="224.0" layoutY="241.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <Button layoutX="333.0" layoutY="240.0" mnemonicParsing="false" onAction="#updateCoach" text="modifier" />
+      <Label layoutX="86.0" layoutY="63.0" text="Nom du coach:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="102.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="138.0" text="Tel:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="170.0" text="Nom de l'académie:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
