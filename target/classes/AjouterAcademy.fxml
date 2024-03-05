@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterAcademyController">
+   <children>
+      <ImageView fitHeight="488.0" fitWidth="735.0" layoutX="-109.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.4;">
+         <image>
+            <Image url="@images/backgr.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tf_nomC" layoutX="207.0" layoutY="91.0" />
+      <TextField fx:id="tf_cat" layoutX="207.0" layoutY="147.0" />
+      <TextField fx:id="tf_loca" layoutX="207.0" layoutY="210.0" />
+      <TextField fx:id="tf_create" layoutX="207.0" layoutY="268.0" />
+      <Text layoutX="69.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de l'académie" />
+      <Text layoutX="137.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Créé par" />
+      <Text layoutX="126.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="localisation" />
+      <Text layoutX="133.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Categorie" />
+      <Button id="sale" fx:id="btn_ajout" layoutX="256.0" layoutY="320.0" mnemonicParsing="false" onAction="#add" stylesheets="@css/stylesheet.css" text="Ajouter" />
+   </children>
+</AnchorPane>
