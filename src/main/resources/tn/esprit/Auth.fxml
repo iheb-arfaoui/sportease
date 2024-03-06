@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@stylew.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.Auth">
+    <children>
+        <Button fx:id="btnClient" layoutX="346.0" layoutY="426.0" mnemonicParsing="false" onAction="#Client" prefHeight="59.0" prefWidth="530.0" text="Client" />
+        <Button fx:id="btnOwner" layoutX="349.0" layoutY="325.0" mnemonicParsing="false" onAction="#Owner" prefHeight="59.0" prefWidth="530.0" text="Owner" />
+    </children>
+</AnchorPane>

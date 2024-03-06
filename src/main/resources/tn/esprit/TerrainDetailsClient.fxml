@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@assets/mycss.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.TerrainDetailsClient">
+    <children>
+        <GridPane layoutX="61.0" layoutY="158.0" prefHeight="242.0" prefWidth="516.0" vgap="15">
+            <children>
+                <Label text="ID:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Name:" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Capacity:" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Category:" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Rent Price:" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label text="Disponibility:" GridPane.rowIndex="5">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+
+                <Label text="Address:" GridPane.rowIndex="6">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                </Label>
+
+                <Label prefHeight="66.0" prefWidth="183.0" text="Creation Date:" GridPane.rowIndex="7">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                </Label>
+                <TextField fx:id="txtId" editable="false" prefHeight="43.0" prefWidth="367.0" GridPane.columnIndex="1" />
+                <TextField fx:id="txtName" editable="false" prefHeight="43.0" prefWidth="339.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="txtCapacity" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="txtsportType" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="txtrentPrice" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <CheckBox fx:id="txtDisponibility" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="txtaddress" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="txtupdatedat" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+        <Button fx:id="btnBook" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="224.0" layoutY="636.0" mnemonicParsing="false" onAction="#handleBookButtonClick" prefHeight="48.0" prefWidth="109.0" style="-fx-background-color: #4CAF50;" text="Book     ">
+            <graphic>
+                <ImageView fitHeight="27.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/icons/apply.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+<!--        <Button alignment="CENTER_RIGHT" layoutX="51.0" layoutY="38.0"  prefHeight="53.0" prefWidth="110.0" style="-fx-background-color: #00BFFF; -fx-text-fill: black; -fx-font-size: 16;" text="Back" textAlignment="RIGHT">-->
+        <Button alignment="CENTER_RIGHT" layoutX="51.0" layoutY="38.0" onAction="#handleBackButtonClick" prefHeight="53.0" prefWidth="110.0" style="-fx-background-color: #00BFFF; -fx-text-fill: black; -fx-font-size: 16;" text="Back" textAlignment="RIGHT">
+            <graphic>
+                <ImageView fx:id="backIcon" fitHeight="26.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/icons/back.png" />
+                    </image>
+                </ImageView>
+            </graphic></Button>
+        <ImageView fx:id="img" fitHeight="337.0" fitWidth="504.0" layoutX="708.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" />
+        <Text fill="RED" layoutX="448.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Field details" wrappingWidth="421.20001220703125">
+            <font>
+                <Font name="Sofia Sans Condensed SemiBold" size="55.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
